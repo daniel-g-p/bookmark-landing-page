@@ -1,0 +1,836 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    font: 400 16px/1.25 'Rubik', sans-serif;
+    color: hsl(229, 8%, 60%);
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 97.5%));
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    transition: color 0.5s ease;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    line-height: 1.75;
+}
+
+button {
+    outline: none;
+    font: 500 1rem/1 'Rubik', sans-serif;
+    border: 3px solid;
+    border-radius: 0.5rem;
+    padding: 1.25rem 0.75rem;
+    box-shadow: 0 0.5rem 1rem -0.5rem hsl(229, 8%, 75%);
+    transition-property: border-color, background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.blueButton {
+    border-color: hsl(231, 69%, 60%);
+    background-color: hsl(231, 69%, 60%);
+    color: hsl(0, 0%, 100%);
+}
+
+.blueButton:hover {
+    color: hsl(231, 69%, 60%);
+}
+
+.whiteButton {
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(229, 8%, 60%);
+}
+
+.whiteButton:hover {
+    border-color: hsl(229, 8%, 60%);
+}
+
+.redButton {
+    width: 100%;
+    box-shadow: none;
+    border-color: hsl(0, 94%, 66%);
+    background-color: hsl(0, 94%, 66%);
+    color: hsl(0, 0%, 100%);
+}
+
+.redButton:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    transition: color 0.25s ease;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    padding: 0 7.5%;
+    overflow-x: hidden;
+}
+
+
+/* Header Section */
+
+header {
+    padding: 3rem 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.5s ease;
+}
+
+#desktopNav {
+    display: none;
+}
+
+
+/* Intro Section */
+
+#intro {
+    text-align: center;
+}
+
+.imageContainer {
+    position: relative;
+    margin-bottom: 3rem;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+.imageContainer img {
+    width: 100%;
+    max-width: 240px;
+    position: relative;
+    z-index: 1;
+}
+
+.backgroundDiv {
+    position: absolute;
+    right: -75%;
+    bottom: 0;
+    display: block;
+    width: 140%;
+    height: 9rem;
+    border-radius: 100rem;
+    background-color: hsl(231, 69%, 60%);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0 6rem;
+}
+
+.buttons button {
+    margin: 0.5rem 0.25rem;
+}
+
+
+/* Features Section */
+
+#features {
+    text-align: center;
+}
+
+#tabs {
+    margin: 1.5rem 0 3rem;
+    position: relative;
+}
+
+.tab {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(229, 8%, 60%, 0.25);
+}
+
+.tab:last-of-type {
+    border-bottom: 1px solid hsla(229, 8%, 60%, 0.25);
+}
+
+.tab .underline {
+    display: block;
+    width: 0;
+    height: 0.25rem;
+    background-color: hsl(0, 94%, 66%);
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    opacity: 0;
+    transition-property: opacity, width, margin-left;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#desktopUnderline {
+    display: none;
+}
+
+.tab.active .underline {
+    width: 12rem;
+    height: 0.25rem;
+    margin-left: calc(50% - 6rem);
+    opacity: 1;
+}
+
+.tab.active h3 {
+    color: hsl(229, 31%, 21%);
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.tab:hover h3 {
+    color: hsl(229, 31%, 21%);
+}
+
+#details {
+    margin-bottom: 6rem;
+}
+
+#details .backgroundDiv {
+    left: -80%;
+}
+
+#details button {
+    display: none;
+}
+
+
+/* Extension Section */
+
+#extension {
+    text-align: center;
+}
+
+#browsers {
+    margin: 3rem 0 6rem;
+}
+
+.browser {
+    width: 100%;
+    padding-top: 3rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.25rem 1rem hsla(229, 8%, 60%, 0.25);
+}
+
+.browserImg {
+    margin-bottom: 1.5rem;
+    width: 108px;
+}
+
+.browser button {
+    margin: 1.5rem 1.5rem;
+    width: 85%;
+}
+
+.dots {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+
+/* FAQ Section */
+
+#faqs {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#faqCollection {
+    margin: 3rem 0;
+}
+
+.faq {
+    padding: 1rem 0;
+    border-bottom: 1px solid hsla(229, 8%, 60%, 0.25);
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.question:hover h3 {
+    color: hsl(229, 31%, 21%);
+}
+
+.answer {
+    text-align: left;
+    overflow: hidden;
+    pointer-events: none;
+    transition: max-height 0.5s ease;
+}
+
+.answer p {
+    margin-top: 0.75rem;
+}
+
+.faq svg {
+    transition: transform 0.5s ease;
+}
+
+.faq path {
+    transition: stroke 0.5s ease;
+}
+
+.faq.active h3 {
+    color: hsl(229, 31%, 21%);
+}
+
+.faq.active .answer {
+    pointer-events: all;
+}
+
+.faq.active svg {
+    transform: rotateZ(180deg);
+}
+
+.faq.active path {
+    stroke: hsl(0, 94%, 66%);
+}
+
+#faqs button {
+    padding: 1.25rem 2.5rem;
+}
+
+
+/* Contact Section */
+
+#contact {
+    background-color: hsl(231, 69%, 60%);
+    padding: 3rem 7.5%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+form div {
+    width: 100%;
+    padding: 4px 4px 0;
+    border-radius: 0.5rem;
+}
+
+#email {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: hsl(231, 69%, 60%);
+    transition: background-color 0.25s ease;
+}
+
+#email input {
+    font: 400 1rem/1 'Rubik', sans-serif;
+    width: 100%;
+    height: 62px;
+    border: none;
+    padding: 1.25rem 2.5rem 1.25rem 1.25rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s ease;
+}
+
+#email input:focus {
+    background-color: hsl(0, 0%, 95%);
+}
+
+#email p {
+    margin-left: 1.25rem;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    font-size: 0.75rem;
+    line-height: 2.5;
+    overflow-y: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: max-height, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#email::after {
+    display: block;
+    content: url("resources/icon-error.svg");
+    position: absolute;
+    right: 1.25rem;
+    top: 24px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#email.error {
+    background-color: hsl(0, 94%, 66%);
+}
+
+#email.error p {
+    opacity: 1;
+}
+
+#email.error::after {
+    opacity: 1;
+}
+
+
+/* Footer Section */
+
+footer {
+    text-align: center;
+    padding: 3rem 7.5%;
+    background-color: hsl(229, 31%, 21%);
+}
+
+footer img {
+    width: 12rem;
+    margin-bottom: 1.5rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer nav a:hover {
+    color: hsl(231, 69%, 60%);
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.social a {
+    margin: 0 0.5rem;
+}
+
+.social a path {
+    transition: fill 0.25s ease;
+}
+
+.social a:hover path {
+    fill: hsl(231, 69%, 60%);
+}
+
+
+/* Mobile Menu */
+
+main.inactive {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mobileNav {
+    position: fixed;
+    top: 0;
+    padding: 3rem 7.5%;
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(229, 31%, 21%, 0.95);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#mobileNav.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#mobileNav>div {
+    width: 100%;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.topRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    margin-bottom: 3rem;
+}
+
+#mobileNav nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#mobileNav nav a {
+    font-size: 1.25rem;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    border-top: 1px solid hsl(229, 8%, 60%);
+    background-color: hsla(0, 0%, 100%, 0);
+    transition-property: color, background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+#mobileNav nav a:last-of-type {
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+
+#mobileNav nav a:focus {
+    color: hsl(229, 31%, 21%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+#mobileNav button {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.25rem;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 3rem;
+    transition-property: color, background;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+#mobileNav button:focus {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(229, 31%, 21%);
+}
+
+
+/* Animated Tabs */
+
+.tabImages {
+    display: block;
+    position: relative;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.tabImages .tabImage {
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    position: absolute;
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.tabImage.fadeOut {
+    transform: translateX(2rem);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tabImage.fadeIn {
+    transform: translateX(-2rem);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.option {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.option.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 414px) {
+    .imageContainer img {
+        max-width: 340px;
+    }
+    #tabs {
+        margin-bottom: 9rem;
+    }
+}
+
+@media (min-width: 960px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2,
+    h6 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    header,
+    section,
+    footer {
+        width: 100%;
+        padding: 0 12.5%;
+    }
+    header {
+        padding: 3rem 12.5%;
+    }
+    .navToggle {
+        display: none;
+    }
+    #desktopNav {
+        display: flex;
+        align-items: center;
+    }
+    #desktopNav a {
+        color: hsl(229, 31%, 21%);
+        margin: 0 0.75rem;
+    }
+    #desktopNav a:hover {
+        color: hsl(231, 69%, 60%);
+    }
+    #desktopNav button {
+        padding: 1rem 2rem;
+        margin-left: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 400;
+    }
+    #intro {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin: 6rem 0;
+    }
+    .text {
+        width: 50%;
+    }
+    .buttons {
+        justify-content: flex-start;
+        margin: 1.5rem 0 0;
+    }
+    .buttons button {
+        margin-right: 1rem;
+    }
+    #intro .imageContainer {
+        width: 50%;
+        padding-left: 3rem;
+    }
+    #intro .imageContainer img {
+        max-width: 480px;
+    }
+    .backgroundDiv {
+        height: 12rem;
+    }
+    #tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid hsla(229, 8%, 60%, 0.25);
+    }
+    #tabs .tab {
+        border: none;
+        flex-grow: 1;
+    }
+    #tabs .underline {
+        display: none;
+    }
+    #desktopUnderline {
+        display: block;
+        width: calc(100% / 3);
+        height: 0.25rem;
+        background-color: hsl(0, 94%, 66%);
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        opacity: 1;
+        transition: margin-left 0.5s ease;
+    }
+    #details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #details .text {
+        width: 50%;
+        text-align: left;
+    }
+    #details button {
+        display: block;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    #details .imageContainer {
+        width: 50%;
+        padding-right: 6rem;
+        margin: 0;
+    }
+    #extension {
+        padding-bottom: 6rem;
+    }
+    #browsers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .browser {
+        margin: 0 1rem;
+        flex-grow: 1;
+    }
+    .browser:nth-of-type(2) {
+        margin: 3rem 1rem -3rem;
+    }
+    .browser:nth-of-type(3) {
+        margin: 6rem 1rem -6rem;
+    }
+    .browser button {
+        width: auto;
+    }
+    #faqs {
+        max-width: 960px;
+        margin: 0 auto 6rem;
+    }
+    form {
+        flex-direction: row;
+        max-width: 540px;
+        margin: 3rem auto 0;
+    }
+    #contactButton {
+        width: 50%;
+        margin-left: 1rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 12.5%;
+    }
+    footer img,
+    footer a,
+    .social {
+        margin: 0;
+    }
+    footer>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    footer nav {
+        flex-direction: row;
+        margin-left: 1.5rem;
+    }
+    footer a {
+        margin: 0 1.5rem;
+    }
+}

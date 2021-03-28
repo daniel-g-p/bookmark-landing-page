@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Landing Page</title>
+    <link rel="shortcut icon" type="icon/png" href="resources/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="resources/logo-bookmark.svg" alt="Bookmark Logo" class="logo">
+            <svg width="18" height="15" class="navToggle">
+                <path fill="#242A45" fill-rule="evenodd" d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z" />
+            </svg>
+            <nav id="desktopNav">
+                <a href="">Features</a>
+                <a href="">Pricing</a>
+                <a href="">Contact</a>
+                <button class="redButton">Login</button>
+            </nav>
+        </header>
+        <section id="intro">
+            <div class="imageContainer">
+                <img src="resources/illustration-hero.svg" alt="A simple Bookmark Manager">
+                <div class="backgroundDiv"></div>
+            </div>
+            <div class="text">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>
+                    A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                </p>
+                <div class="buttons">
+                    <button class="blueButton">Get it on Chrome</button>
+                    <button class="whiteButton">Get it on Firefox</button>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <p>
+                Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+            <div id="tabs">
+                <div class="tab active" id="bookmarking" style="pointer-events: all;">
+                    <h3>Simple Bookmarking</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="tab" id="searching" style="pointer-events: all;">
+                    <h3>Speedy Searching</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="tab" id="sharing" style="pointer-events: all;">
+                    <h3>Easy Sharing</h3>
+                    <div class="underline"></div>
+                </div>
+                <div id="desktopUnderline" style="margin-left: 0;"></div>
+            </div>
+            <div id="details">
+                <div class="imageContainer">
+                    <div class="tabImages">
+                        <img src="resources/illustration-features-tab-1.svg" alt="Simple Bookmarking" class="tabImage active bookmarking">
+                        <img src="resources/illustration-features-tab-2.svg" alt="Intelligent Search" class="tabImage fadeIn searching">
+                        <img src="resources/illustration-features-tab-3.svg" alt="Easy Sharing" class="tabImage fadeIn sharing">
+                    </div>
+                    <div class="backgroundDiv"></div>
+                </div>
+                <div class="text">
+                    <div class="option bookmarking active" style="display: block;">
+                        <h2>Bookmark in one click</h2>
+                        <p>
+                            Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                        </p>
+                        <button class="blueButton">More Info</button>
+                    </div>
+                    <div class="option searching" style="display: none">
+                        <h2>Intelligent search</h2>
+                        <p>
+                            Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+                        </p>
+                        <button class="blueButton">More Info</button>
+                    </div>
+                    <div class="option sharing" style="display: none;">
+                        <h2>Share your bookmarks</h2>
+                        <p>
+                            Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+                        </p>
+                        <button class="blueButton">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="extension">
+            <h2>Download the extension</h2>
+            <p>
+                We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
+            </p>
+            <div id="browsers">
+                <div class="browser" id="chrome">
+                    <img src="resources/logo-chrome.svg" alt="Chrome" class="browserImg">
+                    <h4>Add to Chrome</h4>
+                    <p>Minimum vesion 62</p>
+                    <img src="resources/bg-dots.svg" alt="Dots" class="dots">
+                    <button class="blueButton">Add Extension</button>
+                </div>
+                <div class="browser" id="firefox">
+                    <img src="resources/logo-firefox.svg" alt="Firefox" class="browserImg">
+                    <h4>Add to Firefox</h4>
+                    <p>Minimum vesion 55</p>
+                    <img src="resources/bg-dots.svg" alt="Dots" class="dots">
+                    <button class="blueButton">Add Extension</button>
+                </div>
+                <div class="browser" id="opera">
+                    <img src="resources/logo-opera.svg" alt="Opera" class="browserImg">
+                    <h4>Add to Opera</h4>
+                    <p>Minimum vesion 46</p>
+                    <img src="resources/bg-dots.svg" alt="Dots" class="dots">
+                    <button class="blueButton">Add Extension</button>
+                </div>
+            </div>
+        </section>
+        <section id="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+            </p>
+            <div id="faqCollection">
+                <div class="faq">
+                    <div class="question">
+                        <h3>What is Bookmark?</h3>
+                        <svg width="18" height="12">
+                            <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                        </svg>
+                    </div>
+                    <div class="answer" style="max-height: 0;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae optio quam. Tempore, adipisci non vitae sequi minima itaque corporis voluptatibus quod possimus animi aliquam asperiores aut consequatur rerum voluptatem!
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h3>How can I request a new browser?</h3>
+                        <svg width="18" height="12">
+                            <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                        </svg>
+                    </div>
+                    <div class="answer" style="max-height: 0;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae optio quam. Tempore, adipisci non vitae sequi minima itaque corporis voluptatibus quod possimus animi aliquam asperiores aut consequatur rerum voluptatem!
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Is there a mobile app?</h3>
+                        <svg width="18" height="12">
+                            <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                        </svg>
+                    </div>
+                    <div class="answer" style="max-height: 0;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae optio quam. Tempore, adipisci non vitae sequi minima itaque corporis voluptatibus quod possimus animi aliquam asperiores aut consequatur rerum voluptatem!
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="question">
+                        <h3>What about other Chromium browsers?</h3>
+                        <svg width="18" height="12">
+                            <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                        </svg>
+                    </div>
+                    <div class="answer" style="max-height: 0;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae optio quam. Tempore, adipisci non vitae sequi minima itaque corporis voluptatibus quod possimus animi aliquam asperiores aut consequatur rerum voluptatem!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="blueButton">More Info</button>
+        </section>
+        <section id="contact">
+            <h5>35,000+ already joined</h5>
+            <h6>Stay up-to-date with what we're doing</h6>
+            <form action="" novalidate>
+                <div id="email">
+                    <input type="email" placeholder="Enter your email address" name="email">
+                    <p style="max-height: 0;">Whoops, make sure it's an email</p>
+                </div>
+                <div id="contactButton">
+                    <button class="redButton">Contact Us</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <img src="resources/logo-bookmark-inverted.svg" alt="Bookmark Logo">
+                <nav>
+                    <a href="">Features</a>
+                    <a href="">Pricing</a>
+                    <a href="">COntact</a>
+                </nav>
+            </div>
+            <div class="social">
+                <a href="">
+                    <svg width="24" height="24">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                    </svg>
+                </a>
+                <a href="">
+                    <svg width="24" height="20">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </main>
+    <section id="mobileNav" style="visibility: hidden;">
+        <div>
+            <div class="topRow">
+                <img src="resources/logo-bookmark-inverted.svg" alt="Bookmark Logo" class="logo">
+                <svg width="16" height="15" class="navToggle active">
+                    <path fill="#FFF" fill-rule="evenodd"
+                        d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z" />
+                </svg>
+            </div>
+            <nav>
+                <a href="">Features</a>
+                <a href="">Pricing</a>
+                <a href="">Contact</a>
+                <button>Login</button>
+            </nav>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com">
+                <svg width="24" height="24">
+                    <path fill="#FFF" fill-rule="evenodd"
+                        d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                </svg>
+            </a>
+            <a href="https://www.twitter.com">
+                <svg width="24" height="20">
+                    <path fill="#FFF" fill-rule="evenodd"
+                        d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
