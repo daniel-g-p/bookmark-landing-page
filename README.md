@@ -33,7 +33,7 @@ In order to deploy the project, I used the free hosting platform Vercel.
 
 As previously mentioned, the project features a slider containing three content blocks, only one of which is displayed at a time. The section is animated with a subtle fade-in effect and is of course adapted for mobile devices.
 
-### FAQ section
+### Collapsible FAQ section
 
 This was my second time building an FAQ section similar to this, only this time I went the extra mile to animate it and make sure that only one question can be opened at a time to improve user experience. I do have to confess that I took the easy way out by using Lorem Ipsum placeholder text, but the functionality is all there ;)
 
