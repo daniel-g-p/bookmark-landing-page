@@ -2,7 +2,7 @@
 
 ![Bookmark](https://github.com/daniel-g-p/bookmark-landing-page/blob/main/cover_image.PNG)
 
-Bookmark is a simple landing page for an imaginary tool for browser bookmark managememt. It is based on a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR) and the live site can be accessed [here](https://crowdfunding-product-page-daniel-g-p.vercel.app/)
+Bookmark is a simple landing page for an imaginary tool for browser bookmark managememt. It is based on a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR) and the live site can be accessed [here](https://bookmark-landing-page-daniel-g-p.vercel.app/)
 
 ## Table of Contents
 
@@ -14,14 +14,14 @@ Bookmark is a simple landing page for an imaginary tool for browser bookmark man
 
 ## Motivation
 
-By tackling this challenge, my main goal was to practice using DOM events as well as form handling in JavaScript, as the project includes multiple instances of both concepts.
+This project mainly made me work on my CSS and JS skills and my abilit to replicatea design, as it features multiple sections that are slightly more advanced than what I had seen in previous projects. Aside from that, I enjoyed coding this page because it really does follow a design that makes sense for an actual company.
 
 ## Technologies
 
 ### HTML, CSS, JAVASCRIPT
 
 This project was built responsively with HTML, CSS, and JS in their purest form. The design attempts to replicate the template provided by the challenge as closely as possible.
-THe main challenge was to handle user inputs cleanly, which implied many things from validating inputs, over creating custom radio buttons, all the way to taking the user input and dynamically using it to update the page.
+THe most challenging aspect of the project was defintely the slider between the three tabs, as it was my first time building one and the fact that the images came in slightly different proportions made me figure out how to get it to work with absolute positioning.
 
 ### Vercel
 
@@ -29,19 +29,22 @@ In order to deploy the project, I used the free hosting platform Vercel.
 
 ## Features
 
-### Pledge Option Selection
+### Animated Tab Slider
 
-Users have multiple ways of selecting an option from the list available: They can either open the selection modal to choose manually by clicking the "Back this project button", or they can go to the bottom section of the page to choose an option there and have it automatically selected when the selection modal appears.
+As previously mentioned, the project features a slider containing three content blocks, only one of which is displayed at a time. The section is animated with a subtle fade-in effect and is of course adapted for mobile devices.
 
-### Pledge Amount Input
+### FAQ section
 
-Depending on the option chosen, there are different minimum requirements for the pledge that a user has to enter, and this is handled with front end form validation in JS. Whenever a valid value is submitted, both the project statistics as well as the stock levels are updated in the DOM.
+This was my second time building an FAQ section similar to this, only this time I went the extra mile to animate it and make sure that only one question can be opened at a time to improve user experience. I do have to confess that I took the easy way out by using Lorem Ipsum placeholder text, but the functionality is all there ;)
+
+### Email Form
+
+At the very bottom of the page, you will an email signup simulation which is equipped with front end validation.
 
 ## Project Status
 
-Realitically speaking, there is little use of this simulation in a real situation, but I may pick the concept up again once I build a payment gateway further down the line, possibly using a tool of the likes of Stripe.
+This project certainly has potential to be built out in the future, as it is a digital tool that I would enjoy developing once I become more comfortable with back end technology. For now, however, the landing page has been fully developed as it pertains to the front end.
 
 ## References
 
-* Custom Radio Button Tutorial: https://www.youtube.com/watch?v=5K7JefKDa4s&t=94s
-* Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR
+* Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158
